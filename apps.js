@@ -19,7 +19,7 @@ async function getDogByBreed(breed) {
 }
 
 const form = document.querySelector('#searchform');
-const input = document.querySelector("#search");
+const input = document.querySelector("#search").toLowerCase();
 form.addEventListener("submit", function (e) {
     e.preventDefault();
     getDogByBreed(input.value);
